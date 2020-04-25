@@ -20,7 +20,9 @@ export class InvoiceService {
       url: 'big-zeri',
       icon: 'warning',
       imgPath: 'assets/img/qrCode/big-zeri.png',
-      xym: '20 円'
+      xym: '20 円',
+      priceImagePath: 'assets/img/priceImage/yenImage.png',
+      coinImagePath: 'assets/img/priceImage/coin.png'
     },
     {
       title: 'チロルチョコ',
