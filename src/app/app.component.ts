@@ -1,3 +1,4 @@
+import { InvoiceService } from './services/invoice.service';
 import { Component, OnInit } from '@angular/core';
 
 import { Platform } from '@ionic/angular';
@@ -12,30 +13,17 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
-    {
-      title: 'アクエリアス',
-      url: 'aquarius',
-      icon: 'mail'
-    },
-    {
-      title: 'ビックゼリー',
-      url: 'big-zeri',
-      icon: 'warning'
-    },
-    {
-      title: 'チロルチョコ',
-      url: 'chiroru-choko',
-      icon: 'alert-circle'
-    }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    public invoice: InvoiceService
   ) {
     this.initializeApp();
+    this.appPages = this.invoice.getInvoiceList();
   }
 
   initializeApp() {
