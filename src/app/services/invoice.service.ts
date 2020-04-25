@@ -9,20 +9,22 @@ export class InvoiceService {
       title: 'アクエリアス',
       url: 'aquarius',
       icon: 'mail',
-      imgPath: 'assets/img/aquarius.png',
+      imgPath: 'assets/img/qrCode/aquarius.png',
       xym: '10 円'
     },
     {
       title: 'ビックゼリー',
       url: 'big-zeri',
       icon: 'warning',
-      imgPath: 'assets/img/big-zeri.png'
+      imgPath: 'assets/img/qrCode/big-zeri.png',
+      xym: '20 円'
     },
     {
       title: 'チロルチョコ',
       url: 'chiroru-choko',
       icon: 'alert-circle',
-      imgPath: 'assets/img/chiroru-choko.png'
+      imgPath: 'assets/img/qrCode/chiroru-choko.png',
+      xym: '20 円'
     }
   ];
 
