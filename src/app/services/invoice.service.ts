@@ -10,7 +10,10 @@ export class InvoiceService {
       url: 'aquarius',
       icon: 'mail',
       imgPath: 'assets/img/qrCode/aquarius.png',
-      xym: '10 円'
+      itemImagePath: 'assets/img/itemImage/aquariusImage.png',
+      xym: '10 円',
+      priceImagePath: 'assets/img/priceImage/yenImage.png',
+      coinImagePath: 'assets/img/priceImage/coin.png'
     },
     {
       title: 'ビックゼリー',

@@ -8,20 +8,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title>{{ invoice.title }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong class="capitalize" style="font-size: 32px;">
-      {{ invoice.title }}
-    </strong>
+    <div class="item">
+      <strong class="capitalize" style="font-size: 32px;">
+        {{ invoice.title }}
+      </strong>
+      <img class="item-image" [src]="invoice.itemImagePath"/>
+    </div>
+    <img class="qr-code" [src]="invoice.imgPath" style="width: 150px;"/>
 
-    <img [src]="invoice.imgPath"/>
-    
-    <p class="value" style="margin-top: 68px; font-size: 32px; color: white;">
+    <div class="price">
+      <img class="price-image" [src]="invoice.priceImagePath"/>
+      <img [src]="invoice.coinImagePath"/>
+    </div>
+    <p class="value" style="margin-top: 38px; font-size: 48px; color: white;">
       {{ invoice.xym }}
     </p>
   </div>
