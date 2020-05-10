@@ -95,6 +95,56 @@ export class InvoiceService {
       priceImagePath: 'assets/img/priceImage/yenImage.png',
       coinImagePath: 'assets/img/priceImage/coin.png'
     },
+    {
+      title: 'スーパーボールすくい',
+      url: 'superBall',
+      icon: 'alert-circle',
+      imgPath: 'assets/img/qrCode/superBall.png',
+      itemImagePath: 'assets/img/itemImage/superBallImage.png',
+      xym: '20 円',
+      priceImagePath: 'assets/img/priceImage/yenImage.png',
+      coinImagePath: 'assets/img/priceImage/coin2.png'
+    },
+    {
+      title: 'こんにゃくぜりー',
+      url: 'connyaku',
+      icon: 'alert-circle',
+      imgPath: 'assets/img/qrCode/connyaku.png',
+      itemImagePath: 'assets/img/itemImage/connyakuImage.png',
+      xym: '20 円',
+      priceImagePath: 'assets/img/priceImage/yenImage.png',
+      coinImagePath: 'assets/img/priceImage/coin2.png'
+    },
+    {
+      title: 'お食事券',
+      url: 'oshokuji',
+      icon: 'alert-circle',
+      imgPath: 'assets/img/qrCode/oshokuji.png',
+      itemImagePath: 'assets/img/itemImage/oshokujiImage.png',
+      xym: '50 円',
+      priceImagePath: 'assets/img/priceImage/yenImage.png',
+      coinImagePath: 'assets/img/priceImage/50yen.png'
+    },
+    {
+      title: 'かたぬき',
+      url: 'katanuki',
+      icon: 'alert-circle',
+      imgPath: 'assets/img/qrCode/katanuki.png',
+      itemImagePath: 'assets/img/itemImage/katanukiImage.png',
+      xym: '20 円',
+      priceImagePath: 'assets/img/priceImage/yenImage.png',
+      coinImagePath: 'assets/img/priceImage/coin2.png'
+    },
+    {
+      title: '射的',
+      url: 'shateki',
+      icon: 'alert-circle',
+      imgPath: 'assets/img/qrCode/shateki.png',
+      itemImagePath: 'assets/img/itemImage/shatekiImage.png',
+      xym: '20 円',
+      priceImagePath: 'assets/img/priceImage/yenImage.png',
+      coinImagePath: 'assets/img/priceImage/coin2.png'
+    },
   ];
 
   constructor() { }
