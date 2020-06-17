@@ -18,11 +18,11 @@
     <img class="qr-code" [src]="invoice.imgPath" style="width: 150px;"/>
 
     <div class="price">
-      <img class="price-image" [src]="invoice.priceImagePath"/>
+      <img class="price-image" [src]="invoice.priceImagePath" style="margin-left: 10%;"/>
+      <p class="value" style="margin-top: 38px; font-size: 48px; color: black;">
+        {{ invoice.xym }}
+      </p>
       <img [src]="invoice.coinImagePath"/>
     </div>
-    <p class="value" style="margin-top: 38px; font-size: 48px; color: white;">
-      {{ invoice.xym }}
-    </p>
   </div>
 </ion-content>
